@@ -1,3 +1,13 @@
+/**
+	* pdf转图片方法
+	* @param {Object} {
+        {String} url pdf文件的url,
+        {Number} scale 转换后的倍数 倍数越大图片越大约清晰,
+        {Boolean} isWhole 是否整合为一张图片
+    } 配置参数 
+	* @return
+*/
+
 function pdfToImg({ url, scale = 1, isWhole = false }) {
 	return new Promise((resolve, reject) => {
 		try {
@@ -19,7 +29,6 @@ function pdfToImg({ url, scale = 1, isWhole = false }) {
 						context.translate(0, y)
 						context.scale(scale, -scale)
 						context.translate(0, -y / scale)
-						console.log(viewport)
 						const renderContext = {
 							canvasContext: context,
 							viewport: viewport

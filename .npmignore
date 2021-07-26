@@ -1,0 +1,26 @@
+.DS_Store
+/node_modules/
+/example/
+/static/
+/build/
+/config/
+/src/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+/.gitignore
+/.postcssrc.js
+/.babelrc
+/.editorconfig
+/index.html
+/components.json
+/babel.config.js
+/webpack.dev.conf.js

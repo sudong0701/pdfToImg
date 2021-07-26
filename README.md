@@ -21,7 +21,8 @@ PDF转图片基于pdfjs
     scale: number,   //放大倍数
     isIntegrate: boolean   //是否整合为一张图片
   })
+  ```
   
-
-
+ * 注意:
+ 前端构建工具为vite下不支持，会报错。请使用pdftoimg-vite(在开发，未发布)
 

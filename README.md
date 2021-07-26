@@ -5,7 +5,11 @@ PDF转图片基于pdfjs
 
 #### 在项目根目录下执行
 
-cnpm i pdftoimg-dist -D
+ ```bash
+  cnpm i pdftoimg-dist -D
+  ```
+
+
 
 #### 在页面中添加以下代码
 
@@ -18,6 +22,6 @@ cnpm i pdftoimg-dist -D
     isIntegrate: boolean   //是否整合为一张图片
   })
   
- ```
+
 
 

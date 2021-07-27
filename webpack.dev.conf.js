@@ -10,7 +10,7 @@ module.exports = {
 		publicPath: '',
 		library: 'laputarenderer',
 		libraryTarget: 'umd',
-        libraryExport: 'default'
+        //libraryExport: 'default'
 	},
 	devtool: 'none',
 	mode: 'development',   //

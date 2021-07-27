@@ -17,12 +17,12 @@ PDF转图片基于pdfjs
   import { pdfToImg } from 'pdftoimg-dist'
   
   pdfToImg({
-    url: string,   //pdf的地址 
-    scale: number,   //放大倍数
-    isIntegrate: boolean   //是否整合为一张图片
+    url: string,   //pdf的地址(必填)
+    scale: number,   //放大倍数(非必填 默认为1)
+    isIntegrate: boolean   //是否整合为一张图片 (非必填 默认为false 即不整合为一张图片)
   })
   ```
   
  * 注意:
- 前端构建工具为vite下不支持，会报错。请使用pdftoimg-vite(在开发，未发布)
+ 前端构建工具为vite下不支持。请使用[pdftoimg-vite](https://github.com/sudong0701/pdfToImg-vite)
 

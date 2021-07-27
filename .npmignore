@@ -24,3 +24,5 @@ yarn-error.log*
 /components.json
 /babel.config.js
 /webpack.dev.conf.js
+/tslint.json
+/tsconfig.json

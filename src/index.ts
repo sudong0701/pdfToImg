@@ -1,6 +1,6 @@
-import { GlobalWorkerOptions, getDocument } from 'pdfjs-dist'
+import { GlobalWorkerOptions, getDocument, PDFWorker } from 'pdfjs-dist'
 import {pdfToImgFncConfig } from '../types/index'
-GlobalWorkerOptions.workerSrc = '../static/pdf.worker.js'
+GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.9.359/build/pdf.worker.min.js'
 
 /**
 	* pdf转图片方法

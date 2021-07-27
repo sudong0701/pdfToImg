@@ -1,5 +1,5 @@
 import { GlobalWorkerOptions, getDocument } from 'pdfjs-dist'
-import { pdfToImgParams, pdfToImgFncConfig } from '../types/index'
+import {pdfToImgFncConfig } from '../types/index'
 GlobalWorkerOptions.workerSrc = '../static/pdf.worker.js'
 
 /**
@@ -12,7 +12,7 @@ GlobalWorkerOptions.workerSrc = '../static/pdf.worker.js'
 	* @return
 */
 
-const pdfToImg: pdfToImgFncConfig = ({ url, scale = 1, isIntegrate = false }: pdfToImgParams) => {
+const pdfToImg: pdfToImgFncConfig = ({ url, scale = 1, isIntegrate = false }) => {
 	return new Promise((resolve, reject) => {
 		try {
 			const isEmptyArray = (arr:Array<any>):boolean => {
@@ -77,7 +77,7 @@ const pdfToImg: pdfToImgFncConfig = ({ url, scale = 1, isIntegrate = false }: pd
 	})
 }
 
-export default {
+export {
 	pdfToImg
 }
 
